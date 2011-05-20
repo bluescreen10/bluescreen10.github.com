@@ -43,4 +43,4 @@ And the framework would be responsible of creating the XSD, WSDL, SMD or any oth
 [9]:  http://www.java.com/en/ "Java"
 [10]: http://en.wikipedia.org/wiki/Java_annotation "Annontations"
 [11]: http://perldoc.perl.org/attributes.html "Attributes"
-[i1]: http://www.thelatestnews.in/wp-content/uploads/2009/11/Cloud-Computing.jpg"
+[i1]: http://www.thelatestnews.in/wp-content/uploads/2009/11/Cloud-Computing.jpg
