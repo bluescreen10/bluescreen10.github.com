@@ -15,7 +15,8 @@ Fortunately Perl subroutines have [attributes][11] which is a sort of annotation
 
 That's something I'm trying to hack in a project called "Domuyo" which intends to be a framework for creating web services easily in Perl, to give you a feeling how a controller class would look like here's a snippet:
 
-{ % highlight perl %}
+{% highlight perl %}
+
 package MyController;
 
 use strict;
