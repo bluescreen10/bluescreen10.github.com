@@ -1,1 +1,14 @@
 pygments: true
+
+title: "fprintf.org"
+url: "http://fprintf.org"
+author: "Mariano Wahlmann"
+email: "mariano.wahlmann@gmail.com"
+description: "Programming related topics and thoughts"
+
+paginate: 5
+paginate_files:
+  - index.html
+
+permalink: /:year/:month/:title
+
