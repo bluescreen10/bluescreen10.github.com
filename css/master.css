@@ -1,7 +1,7 @@
 /* Body */
 body {
-    font-family: Droid Sans, Georgia;
-    font-size: 14px;
+    font-family: Droid Sans, Georgia, Arial;
+    font-size: 15px;
     margin: 0px;
     padding: 0px;
 }
@@ -55,4 +55,13 @@ pre code {
     background-color: #f2f2f5;
     display: block;
     box-shadow: 0 2px 4px #d8d8dc;
+}
+
+/* Content */
+.content {
+    width: 950px;
+    text-align: justify;
+    color: #444;
+    margin-left: auto;
+    margin-right: auto;
 }

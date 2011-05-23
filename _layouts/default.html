@@ -19,28 +19,30 @@
     <div class="container">
       {% include header.html %}
 
-      <div class="span-16" id="content">
-        {{ content }}
+      <div class="content">
+        <div class="main">
+          {{ content }}
+        </div>
+        <div class="sidebar">
+          <div class="sidebarbox">
+            <h4>Pages</h4>
+            <ul id="Pages">
+              <li>
+                <a rel="bookmark" title="About" href=="{{ site.url}}/about">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebarbox">
+            <h4>Subscribe</h4>
+            <ul>
+              <li>
+                <a tilte="RSS Feed" href="{{ site.url }}/feed" class="icon-link" id="feed-link">RSS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       
-      <div class="span-5 last" id="sidebar">
-        <div class="sidebarbox">
-          <h4>Pages</h4>
-          <ul id="Pages">
-            <li>
-              <a rel="bookmark" title="About" href=="{{ site.url}}/about">About</a>
-            </li>
-          </ul>
-        </div>
-        <div class="sidebarbox">
-          <h4>Subscribe</h4>
-          <ul>
-            <li>
-              <a tilte="RSS Feed" href="{{ site.url }}/feed" class="icon-link" id="feed-link">RSS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
 
       <footer class="span-21 last" id="footer">
       </footer>
