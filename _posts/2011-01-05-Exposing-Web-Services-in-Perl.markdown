@@ -3,9 +3,7 @@ layout: post
 title: Exposing Web Services in Perl
 ---
 
-![cloud computing][i1]
-
-I've been looking for a good framework in [Perl][1] to write [Web Services][2] and it looks like there isn't. I believe the two main reasons for that is because Perl's [Weak Typing][3] nature and lack of out of the box subroutine signature, this means that the compiler doesn't know at compile time what parameters and which type does a subroutine needs. While in one hand this give you a flexible language in the other hand it makes almost impossible any attempt of meta-descriptions.
+![cloud computing][i1] I've been looking for a good framework in [Perl][1] to write [Web Services][2] and it looks like there isn't. I believe the two main reasons for that is because Perl's [Weak Typing][3] nature and lack of out of the box subroutine signature, this means that the compiler doesn't know at compile time what parameters and which type does a subroutine needs. While in one hand this give you a flexible language in the other hand it makes almost impossible any attempt of meta-descriptions.
 
 The traditional approach to write a Web Service in Perl is to write the backend to attend client's petitions and the meta-descriptive documents ( [XSD][4] and [WSDL][5]). Now imagine you have a Web Service and you want to turn it into a [JSON-RPC][6] service, this means that part of your backend has to be re-written - at least the parser - also you have to write new meta-descriptive documents in this case [SMD][7]. To go a little bit further imagine if you want to have both, this is more likely to create a maintenance hell, any change in one piece may trigger changes in all other pieces and if you want to continue offering different faces ( WS, JSON-RPC, Rest, ... ) this becomes a task for a team of highly trained monkeys.
 
@@ -43,4 +41,4 @@ And the framework would be responsible of creating the XSD, WSDL, SMD or any oth
 [9]:  http://www.java.com/en/ "Java"
 [10]: http://en.wikipedia.org/wiki/Java_annotation "Annontations"
 [11]: http://perldoc.perl.org/attributes.html "Attributes"
-[i1]: http://www.thelatestnews.in/wp-content/uploads/2009/11/Cloud-Computing.jpg
+[i1]: http://cloudcomputingleaders.net/wp-content/uploads/2010/05/cloud-computing-150x150.jpg left
