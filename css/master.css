@@ -1,6 +1,22 @@
+/* Body */
+body {
+    font-family: Droid Sans, Georgia;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
 
-/* Don't delete */
-#search form {
+/* Header */
+
+
+/* Search button */
+.search {
+    position: absolute;
+    left: 720px;
+    top: 30%;
+}
+
+.search form {
     background-image: url("/images/th_search-bg.gif");
     background-repeat: no-repeat;
     background-clip: border-box;
@@ -14,7 +30,8 @@
     background-origin: padding-box;
     padding: 0;
 }
-#search #q {
+
+.search #q {
     background-color: transparent;
     position: relative;
     border: none;
@@ -28,9 +45,4 @@
     margin: 0;
     padding: 0;
     width: 124px;
-}
-#search {
-    position: absolute;
-    left: 720px;
-    top: 30%;
 }
