@@ -12,6 +12,7 @@ body {
 .header {
     display: block;
     position: relative;
+    border-bottom: 1px dashed #ccc;
 }
 
 .header h1 {
@@ -99,7 +100,7 @@ pre code {
 .main {
     float: left;
     width: 650px;
-    border-right: 1px dotted #d8d8dc;
+    border-right: 1px dashed #d8d8dc;
     padding-right: 15px;
 }
 .sidebar {
