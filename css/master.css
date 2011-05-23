@@ -23,6 +23,7 @@ body {
 .header #avatar {
     height: 50px;
     margin-top: 5px;
+    vertical-align: top;
 }
 
 .header h1 a {
