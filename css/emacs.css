@@ -1,5 +1,5 @@
 /* Pygments emacs style */
-code {background-color: #f8f8f8}
+code {background-color: #f8f8f8; font-family: Inconsolata, Courier New}
 code .c {color: #080; font-style: italic}
 code .cp {font-style: normal}
 code .cs {font-style: normal; font-weight: bold}
