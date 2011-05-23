@@ -7,11 +7,15 @@ body {
 }
 
 /* Header */
+.header {
+    display: block;
+    position: relative;
+}
 
 /* Search button */
 .search {
     position: absolute;
-    left: 720px;
+    left: 890px;
     top: 30%;
 }
 
@@ -64,4 +68,15 @@ pre code {
     color: #444;
     margin-left: auto;
     margin-right: auto;
+}
+
+.main {
+    float: left;
+    width: 650px;
+    border-right: 1px dotted #d8d8dc;
+    padding-right: 15px;
+}
+.sidebar {
+    float: left;
+    margin-left: 15px;
 }
