@@ -4,12 +4,26 @@ body {
     font-size: 15px;
     margin: 0px;
     padding: 0px;
+    background-image: url("/images/bg.png");
+    background-repeat: repeat-x;
 }
 
 /* Header */
 .header {
     display: block;
     position: relative;
+}
+
+.header h1 {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.header h1 a {
+    text-decoration: none;
+    font-family: Yanone Kaffeesatz; 
+    font-size: 40px;
+    color: #444;
 }
 
 /* Search button */
@@ -48,6 +62,7 @@ body {
     margin: 0;
     padding: 0;
     width: 124px;
+    top: 1px;
 }
 
 /* Code Box */
