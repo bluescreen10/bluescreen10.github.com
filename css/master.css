@@ -1207,3 +1207,39 @@ a#skype-link {
 .newer a {
     color: #597A9B;
 }
+
+/* Don't delete */
+#search form {
+    background-image: url("/images/th_search-bg.gif");
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-position: 0 0;
+    background-color: transparent;
+    vertical-align: baseline;
+    display: block;
+    background-size: auto auto;
+    height: 24px;
+    width: 158px;
+    background-origin: padding-box;
+    padding: 0;
+}
+#search #q {
+    background-color: transparent;
+    position: relative;
+    border: none;
+    left: 25px;
+    font-size: 15px;
+    width: 139px;
+    vertical-align: baseline;
+    text-align: start;
+    display: inline;
+    background-clip: border-box;
+    margin: 0;
+    padding: 0;
+    width: 124px;
+}
+#search {
+    position: absolute;
+    left: 720px;
+    top: 30%;
+}
