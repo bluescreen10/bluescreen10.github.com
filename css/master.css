@@ -13,15 +13,16 @@ body {
     display: block;
     position: relative;
     border-bottom: 1px dashed #ccc;
-    margin-top: 5px;
 }
 
 .header h1 {
     display: inline-block;
+    margin-top: 5px;
 }
 
 .header #avatar {
     height: 50px;
+    margin-top: 5px;
 }
 
 .header h1 a {
