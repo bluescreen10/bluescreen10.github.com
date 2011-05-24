@@ -9,24 +9,24 @@ body {
 }
 
 /* Header */
-.header {
+header {
     display: block;
     position: relative;
     border-bottom: 1px dashed #ccc;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     margin-top: 5px;
 }
 
-.header #avatar {
+header #avatar {
     height: 50px;
     margin-top: 5px;
     vertical-align: top;
 }
 
-.header h1 a {
+header h1 a {
     text-decoration: none;
     font-family: Yanone Kaffeesatz; 
     font-size: 40px;
