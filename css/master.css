@@ -2,7 +2,6 @@
 body {
     font-family: Droid Sans, Georgia, Arial;
     font-size: 15px;
-    line-height: 1.5em;
     margin: 0px;
     padding: 0px;
     background-image: url("/images/bg.png");
@@ -43,7 +42,6 @@ body {
     padding-left: 15px;
     color: #aaa;
     border-left: 2px solid #aaa;
-    line-height: 1em;
 }
 
 /* Search button */
@@ -115,4 +113,8 @@ pre code {
 .sidebar {
     float: left;
     margin-left: 15px;
+}
+
+article {
+    line-height: 1.5em;
 }
