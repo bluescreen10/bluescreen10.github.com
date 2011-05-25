@@ -22,7 +22,9 @@
 
       <div class="content">
         <article class="post">
-          <h3>{{ page.title }}</h3>
+          <h3>
+            <a href="{{ page.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ page.title }}</a>
+          </h3>
   
           {{ content }}
 
