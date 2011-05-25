@@ -123,6 +123,12 @@ pre code {
     margin-left: 15px;
 }
 
+/* Article */
 article {
     line-height: 1.5em;
+}
+
+article img {
+    max-width: 650px;
+    text-align: center;
 }
