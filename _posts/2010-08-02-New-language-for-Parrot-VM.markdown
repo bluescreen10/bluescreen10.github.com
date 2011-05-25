@@ -3,7 +3,7 @@ layout: post
 title: New language for Parrot VM"
 ---
 
-During last year I've discovered the [Parrot VM][1] project, if you haven't heard about it, it is a register based VM targeted for dynamic languages.
+During last year I've discovered the [Parrot VM][1] project, if you haven't heard about it, Parrot it's a register based VM targeted for dynamic languages.
 
 Basically a VM is an abstraction layer between the Hardware/OS and a High Level Language(HLL) like [Java][2], [.Net][3], [Smalltalk][4], [Perl6][5] and others. The benefits are that same compiled code can run in different platforms without (almost) any modification - part of what made Java successful.
 

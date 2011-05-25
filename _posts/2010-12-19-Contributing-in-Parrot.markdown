@@ -15,7 +15,7 @@ In short the project is a major overhaul of the current embedding API which does
 
 I really want to dedicate a few words about guys in [#parrot][7], they are not only smart but also they are willing to spend time in helping anybody as well as mentoring newcomers.
 
-There is always help needed so if you want to participate in a cool project, <b>join us...
+There is always help needed so if you want to participate in a cool project, join us...
 
 [1]: http://www.parrot.org/ "Parrot"
 [2]: https://github.com/bluescreen10/mantra "Mantra"
