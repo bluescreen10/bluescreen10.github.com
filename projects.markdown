@@ -4,6 +4,7 @@ title: Projects
 ---
 
 Some of the projects I'm participating:
+=======================================
 
 * [Parrot(contributor)][1]: An open source Virtual Machine and Compiler Toolkit. Targeted for dynamic languages.
 * [Mantra(owner)][2]:A prototype-oriented general purpose language using the Parrot compiler toolkit.
