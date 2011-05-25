@@ -12,6 +12,10 @@ body {
 header {
     position: relative;
     height: 91px;
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 header h1 {
@@ -20,8 +24,7 @@ header h1 {
 
 header #avatar {
     position: relative;
-    top: 10px;
-    display: inline-block;
+    display: inline;
 }
 
 header #separator {
@@ -37,7 +40,8 @@ header #separator {
 }
 
 header #content {
-    width: 950px;
+    width: 665px;
+    display: table-cell;
 }
 
 header h1 a {
@@ -57,9 +61,9 @@ header #description {
 
 /* Search button */
 .search {
-    position: absolute;
-    left: 890px;
-    top: 30%;
+    display: table-cell;
+    height: 91px;
+    vertical-align: middle;
 }
 
 .search form {
