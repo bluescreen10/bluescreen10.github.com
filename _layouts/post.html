@@ -20,8 +20,20 @@
       {% include header.html %}
 
       <div class="content">
-        {{ content }}
-        <div id="disqus_thread"></div>
+        <article class="post">
+          <h3>{{ post.title }}</h3>
+  
+          {{ post.content }}
+
+          <div class="meta">
+            <div class="published">
+              Published: {{ post.date | date: "%Y-%m-%d" }}
+              &mdash;
+            </div>
+            <div id="disqus_thread"></div>
+          </div>
+        </article>
+
       </div>
     </div>
     <script type="text/javascript">
