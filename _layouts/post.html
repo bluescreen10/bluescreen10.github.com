@@ -13,6 +13,7 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans|Yanone+Kaffeesatz|Neucha|Inconsolata' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/master.css" />
     <link rel="stylesheet" href="/css/emacs.css" />
+    <title>{{ site.title }} | {{ page.title }}</title>
   </head>
   
   <body>
@@ -21,13 +22,13 @@
 
       <div class="content">
         <article class="post">
-          <h3>{{ title }}</h3>
+          <h3>{{ page.title }}</h3>
   
           {{ content }}
 
           <div class="meta">
             <div class="published">
-              Published: {{ date | date: "%Y-%m-%d" }}
+              Published: {{ page.date | date: "%Y-%m-%d" }}
               &mdash;
             </div>
             <div id="disqus_thread"></div>
