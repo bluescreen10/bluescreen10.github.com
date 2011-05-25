@@ -132,3 +132,21 @@ article img {
     max-width: 650px;
     text-align: center;
 }
+
+/* Sidebar */
+.sidebarbox ul {
+    list-style: none;
+}
+
+a#feed-link {
+    background-image: url("/images/rss.png");
+    background-color: transparent;
+    padding-left: 28px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-clip: border-box;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    display: inline-block;
+    background-size: auto auto;
+}
