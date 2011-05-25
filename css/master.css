@@ -48,7 +48,7 @@ header h1 a {
 }
 
 /* Description */
-.description {
+header #description {
     display: inline-block;
     width: 180px;
     text-align: left;
