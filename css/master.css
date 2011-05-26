@@ -9,7 +9,7 @@ body {
 }
 
 /* Header */
-header {
+#header {
     position: relative;
     height: 91px;
     width: 950px;
@@ -18,21 +18,21 @@ header {
     display: block;
 }
 
-header h1 {
+#header h1 {
     display: inline-block;
     position: absolute;
     left: 55px;
     top: 0px;
 }
 
-header #avatar {
+#header #avatar {
     position: absolute;
     left: 0px;
     top: 20px;
     display: inline-block;
 }
 
-header #separator {
+#header #separator {
     height: 50px;
     position: absolute;
     display: inline-block;
@@ -42,7 +42,7 @@ header #separator {
     border-right: 1px solid #dfdfdf;
 }
 
-header h1 a {
+#header h1 a {
     text-decoration: none;
     font-family: Yanone Kaffeesatz; 
     font-size: 40px;
@@ -50,7 +50,7 @@ header h1 a {
 }
 
 /* Description */
-header #description {
+#header #description {
     display: inline-block;
     position: absolute;
     font-size: 12px;
@@ -63,14 +63,14 @@ header #description {
 }
 
 /* Search button */
-header #search {
+#header #search {
     display: inline-block;
     left: 665px;
     top: 33px;
     position: absolute;
 }
 
-header #search form {
+#header #search form {
     background-image: url("/images/th_search-bg.gif");
     background-repeat: no-repeat;
     background-clip: border-box;
@@ -85,7 +85,7 @@ header #search form {
     padding: 0;
 }
 
-header #search #q {
+#header #search #q {
     background-color: transparent;
     position: relative;
     border: none;
