@@ -136,11 +136,11 @@ pre code {
 }
 
 /* Article */
-article {
+#article {
     line-height: 1.5em;
 }
 
-article img {
+#article img {
     max-width: 650px;
     text-align: center;
 }
