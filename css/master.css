@@ -39,11 +39,6 @@ header #separator {
 
 }
 
-header #content {
-    width: 665px;
-    display: inline-block;
-}
-
 header h1 a {
     text-decoration: none;
     font-family: Yanone Kaffeesatz; 
