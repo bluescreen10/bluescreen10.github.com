@@ -41,7 +41,7 @@ header #separator {
 
 header #content {
     width: 665px;
-    display: table-cell;
+    display: inline-block;
 }
 
 header h1 a {
@@ -61,7 +61,7 @@ header #description {
 
 /* Search button */
 .search {
-    display: table-cell;
+    display: inline-block;
     height: 91px;
     vertical-align: middle;
 }
