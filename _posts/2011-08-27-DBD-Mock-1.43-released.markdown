@@ -1,0 +1,22 @@
+---
+layout: post
+title: DBD::Mock 1.43 released!
+---
+
+I've just finished uploading version 1.43 of [DBD::Mock][1]. Couple months ago I've spoken with the author and asked to be the maintainer of that module since they were not releasing new versions.
+
+Since then my focus was narrowing down the [open bugs][2] in the queue. Now I've only one bug sitting there waiting to be resolved. As a goal I've set a calendar of monthly releases - or at least every two months - so people don't wait a lot for bug fixes or new features.
+
+I haven't made significant changes to the API yet and to be honest I'll try maintain backwards compatibility as much as I can because I don't want to make my users change their tests. At the same time I want to introduce changes to make the API more intuitive and easier to use and bring new functionality into. 
+
+This version includes:
+
+- Segregated into different packages
+- Removed code coverage from POD
+- Fixed bug rt49537 Basic support for named parameters
+- Fixed bug rt70421 Build.PL now contains Test::Exception
+
+Enjoy!
+
+[1]: https://metacpan.org/module/DBD::Mock "DBD::Mock"
+[2]: https://rt.cpan.org/Dist/Display.html?Status=Active&Queue=DBD-Mock "open bugs"
