@@ -11,5 +11,5 @@ Also discovered that asking for a file browser is asking too much as well. A fri
 
 My next target it's being able write some code on it, and there [Textastic][2] looks promising.
 
-[1] http://c9.io/ "Cloud9"
-[2] http://www.textasticapp.com/ "Textastic"
+[1]: http://c9.io/ "Cloud9"
+[2]: http://www.textasticapp.com/ "Textastic"
