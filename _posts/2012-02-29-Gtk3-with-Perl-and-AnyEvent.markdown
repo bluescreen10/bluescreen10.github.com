@@ -3,9 +3,9 @@ layout: post
 title: Gtk3 with Perl and AnyEvent
 ---
 
-Gtk+ its an awesome toolkit, cross platform, cross language it is all great but the documentation is terrible specially on scripting language's side. Basically if you want to get anything done you have to browse the official (yet incomplete), [StackOverflow][1] questions, blogs and even so you may not be able to find the answer.
+[Gtk+][1] its an awesome toolkit, cross platform, cross language it is all great but the documentation is terrible specially on scripting language's side. Basically if you want to get anything done you have to browse the official (yet incomplete) documentation, [StackOverflow][2] questions, blogs and even so you may not be able to find the answer for your problem.
 
-Gtk3 is even more complicated because is relatively new and because most implementations use introspection to generate the bindings so there is no way to read the source of anything to see what methods or classes are available. I was looking for an example on how to draw a widget that can be updated based on an event, in other words, how to mix AnyEvent and Gtk3. It took me couple days to come up with a solution that works (Gtk3 changes things a little bit).
+Gtk3 is even more complicated because is relatively new and because most implementations use introspection to generate the bindings so there is no way to read the source of anything to see what methods or classes are available. The other day I was looking for an example on how to draw a widget that can be updated based on an event, in other words, how to mix AnyEvent and Gtk3. It took me couple days to come up with a solution that works (Gtk3 changes things a little bit).
 
 Here is the code...
 
@@ -44,4 +44,5 @@ my $timer = AnyEvent->timer(
 Gtk3->main;
 {% endhighlight %} 
 
-[1]:  http://stackoverflow.com/ "StackOverflow"
+[1]:  http://www.gtk.org/ "Gtk+"
+[2]:  http://stackoverflow.com/ "StackOverflow"
