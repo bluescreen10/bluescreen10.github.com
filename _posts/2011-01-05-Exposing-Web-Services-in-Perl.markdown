@@ -30,7 +30,7 @@ sub add :METHOD(Int a, Int b) RETURNS(Int) {
 
 And the framework would be responsible of creating the XSD, WSDL, SMD or any other meta-descriptive document as well as parse the request and dispatch it. At this moment I've parts of the skeleton of the framework and made a couple of proof of concepts scripts and as soon as I've something to release I will definitely do. Don't switch the channel.
 
-[1]:  href="http://www.perl.org/ "Perl"
+[1]:  http://www.perl.org/ "Perl"
 [2]:  http://en.wikipedia.org/wiki/Web_service "Web Service"
 [3]:  http://en.wikipedia.org/wiki/Weak_typing "Weak Typing"
 [4]:  http://www.w3.org/TR/xmlschema-0/ "XSD"
