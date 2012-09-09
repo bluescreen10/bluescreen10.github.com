@@ -4,10 +4,11 @@ title: No Retry, No More Waiting
 ---
 
 Usually when dealing with unreliable, slow services or both the most common answer is to either to increase the number of times you retry or increment timeout values. Both solutions would make your application slower and might have the following impact in your business:
-  * Reduce customer satisfaction
-  * Reduce the number of TPS your application can handle
-  * Increment your exposure to a DoS attack
-  * Increment operation costs
+ 
+* Reduce customer satisfaction
+* Reduce the number of TPS your application can handle
+* Increment your exposure to a DoS attack
+* Increment operation costs
 
 Although in some occasions may be the right answer we need to conduct a careful analysis before proceeding and most important we need data to make an inform decision. Now let's take a closer look to each problem individually.
 
