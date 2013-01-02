@@ -7,10 +7,10 @@ title: Blog
 <div class="article">
   <h3>
     <a href="{{ site.url }}{{ post.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ post.title }}</a>
-    <span st_url="{{ post.url }}" class="st_facebook"></span>
-    <span st_url="{{ post.url }}" class="st_twitter"></span>
-    <span st_url="{{ post.url }}" class="st_googleplus"></span>
-    <span st_url="{{ post.url }}" class="st_email"></span>
+    <span st_title="{{ post.title }}" st_url="{{ site.url }}{{ post.url }}" class="st_facebook"></span>
+    <span st_title="{{ post.title }}" st_url="{{ site.url }}{{ post.url }}" class="st_twitter"></span>
+    <span st_title="{{ post.title }}" st_url="{{ site.url }}{{ post.url }}" class="st_googleplus"></span>
+    <span st_title="{{ post.title }}" st_url="{{ site.url }}{{ post.url }}" class="st_email"></span>
   </h3>
   
     {{ post.content }}
