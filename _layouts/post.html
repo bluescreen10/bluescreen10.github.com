@@ -24,6 +24,11 @@
         <div class="article">
           <h3>
             <a href="{{ page.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ page.title }}</a>
+            <span class='st_sharethis_large' displayText='ShareThis'></span>
+            <span class='st_facebook_large' displayText='Facebook'></span>
+            <span class='st_twitter_large' displayText='Tweet'></span>
+            <span class='st_googleplus_large' displayText='Google +'></span>
+            <span class='st_email_large' displayText='Email'></span>
           </h3>
   
           {{ content }}
@@ -54,5 +59,11 @@
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
     {% include google_analytics.html %}
+
+    <!-- ShareThis -->
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "91fc9246-1f09-4fb0-9cca-bd69a2ce87dd"});</script>
+    <!-- /ShareThis -->
   </body>
 </html>
