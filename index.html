@@ -25,22 +25,3 @@ title: Blog
 <!-- /article -->
 {% endfor %}
 
-<div class="pagination-centered">
-  <ul class="pagination">
-    <li {% if !paginator.previous_page %}class="disabled"{% endif %}>
-      <a href="{{ paginator.next_previous_path }}">&laquo;</a>
-    </li>
-
-    {% for current_page in (1..paginator.total_pages) %}
-      {% if page == current_page %}
-      <li class="active"><span>{{ current_page }}</span></li>
-      {% else %}
-      <li><a href="/page{{ current_page }}/">{{ current_page }}</a></li>
-      {% endif %}
-    {% endfor %}
-
-    <li {% if !paginator.next_page %}class="disabled"{% endif %}>
-      <a href="{{ paginator.next_page_path }}">&raquo;</a>
-    </li>
-  </ul>
-</div>
