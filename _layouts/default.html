@@ -1,78 +1,88 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-
+<!DOCTYPE html>
 <html>
-
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="author" content="{{ site.authour }}">
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.authour }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ site.url }}/feed" rel="alternate" title="fprintf.org RSS">
-    <link href="http://fprintf.org/" rel="home">
-    <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Yanone+Kaffeesatz|Neucha|Inconsolata" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/master.css">
-    <link rel="stylesheet" href="/css/emacs.css">
-    <title>{{ site.title }} | {{ page.title }}</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/default.css">
   </head>
-
   <body>
-    <div class="container">
-      {% include header.html %}
 
-      <div class="content">
-        <div class="main">
+    <!-- header -->
+    {% include header.html %}
+    <!-- /hedaer -->
+
+    <!-- content -->
+    <div class="container">
+      <div class="row">
+        <!-- main -->
+        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
           {{ content }}
         </div>
-        <div class="sidebar">
-          <div class="sidebarbox">
-            <h4>Pages</h4>
-            <ul id="Pages">
-              <li>
-                <a rel="bookmark" title="Blog" href="{{ site.url}}">Blog</a>
-              </li>
-              <li>
-                <a rel="bookmark" title="Projects" href="{{ site.url}}/projects.html">Projects</a>
-              </li>
-              <li>
-                <a rel="bookmark" title="About" href="{{ site.url}}/about.html">About</a>
-              </li>
-            </ul>
-          </div>
-          <div class="sidebarbox">
-            <h4>Subscribe</h4>
-            <ul>
-              <li>
-                <a title="RSS Feed" href="{{ site.url }}/atom.xml" class="icon-link" id="feed-link">RSS</a>
-              </li>
-            </ul>
-          </div>
-          <div class="sidebarbox">
-            <script type="text/javascript">
-              <!--
-                  google_ad_client = "ca-pub-5904150192205000";
-                  /* fprintf.org */
-                  google_ad_slot = "2313905394";
-                  google_ad_width = 250;
-                  google_ad_height = 250;
-                  //-->
-            </script>
-            <script type="text/javascript"
-                    src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-            </script>
-          </div>
-        </div>
-      </div>
-      
+        <!-- /main -->
 
-      <div id="footer">
+        <!-- side bar -->
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-0">
+
+          <!-- search box -->
+          <div class="search-box">
+            <div class="input-group">
+              <input type="text" class="form-control">
+              <span class="input-group-btn">
+                <button class="btn btn-custom" type="button"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </div>
+          <!-- searchbox -->
+
+          <!-- categories -->
+          <section class="side-box">
+            <h3 class="title">Categories</h3>
+            <ul class="list">
+              <li><a>Programming</a></li>
+              <li><a>Perl</a></li>
+              <li><a>Agile</a></li>
+              <li><a>Engineering</a></li>
+              <li><a>Management</a></li>
+            </ul>
+          </section>
+          <!-- categories -->
+
+          <!-- archive -->
+          <section class="side-box">
+            <h3>Archive</h3>
+            <ul class="list">
+              <li><a>February 2013</a></li>
+              <li><a>June 2012</a></li>
+              <li><a>March 2012</a></li>
+            </ul>
+          </section>
+          <!-- /archive -->
+    
+        </div>
+        <!-- /side bar -->      
+
       </div>
+      <!-- /row -->
+
     </div>
+    <!-- content -->
+
+
+    <!-- footer -->
+    {% include footer.html %}
+    <!-- /footer -->
+
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
     {% include disqus.html %}
     {% include google_analytics.html %}
-
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "91fc9246-1f09-4fb0-9cca-bd69a2ce87dd"});</script>
   </body>
 </html>
