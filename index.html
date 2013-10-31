@@ -11,15 +11,11 @@ title: Blog
     <ul>
       <li><i class="fa fa-clock-o"></i>{{ post.date | date: "%B %d, %Y" }}</li>
       <li><i class="fa fa-tags"></i>
-        {% for category in post.categories %}
-        <a href="/tags/{{ category }}.html">{{ category }}</a>
-        {% if !forloop.last %},{% endif %}
-        {% endfor %}</li>
       <li><i class="fa fa-comments"></i><a href="{{ site.url }}{{ post.url }}#disqus_thread">comments</a></li>
     </ul>
   </header>
   <div class="content">
-    {{ post.excerpt | markdownify }}
+
   </div>
   <footer>
     <a href="{{ site.url }}{{ post.url }}" class="btn btn-custom">Read more</a>
