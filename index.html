@@ -3,24 +3,4 @@ layout: default
 title: Blog
 ---
 
-{% for post in paginator.posts %}
-<!-- article -->
-<article>
-  <header class="post-meta">
-    <h3>{{ post.title }}</h3>
-    <ul>
-      <li><i class="fa fa-tags"></i>
-      <li><i class="fa fa-comments"></i><a href="{{ site.url }}{{ post.url }}#disqus_thread">comments</a></li>
-    </ul>
-  </header>
-  <div class="content">
-
-  </div>
-  <footer>
-    <a href="{{ site.url }}{{ post.url }}" class="btn btn-custom">Read more</a>
-  </footer>
-</article>
-<hr>
-<!-- /article -->
-{% endfor %}
 
