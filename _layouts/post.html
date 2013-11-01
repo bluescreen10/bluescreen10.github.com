@@ -36,12 +36,17 @@
                   {% if forloop.last == false %},{% endif %}
                   {% endfor %}</li>
                 <li><i class="fa fa-comments"></i><a href="{{ site.url }}{{ page.url }}#disqus_thread">comments</a></li>
+                <li class="pull-right"><a href="https://twitter.com/share" class="twitter-share-button" data-via="mwahlmann">Tweet</a></li>
+                <li class="pull-right"><div class="g-plusone" data-size="medium"></div></li>
               </ul>
             </header>
             <div class="content">
               {{ content }}
             </div>
             <footer>
+              <div class="share">
+
+              </div>
               <div id="disqus_thread"></div>
             </footer>
           </article>
@@ -71,6 +76,7 @@
 
     <script src="/js/jquery-2.0.3.min.js" type="text/javascript"></script>
     <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/js/social-share.js" type="text/javascript"></script>
 
     <!-- disqus -->
     <script type="text/javascript">
