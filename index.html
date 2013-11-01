@@ -15,7 +15,7 @@ title: Blog
         <a href="/tags/{{ category }}.html">{{ category | capitalize }}</a>
         {% if forloop.last == false %},{% endif %}
         {% endfor %}</li>
-      <li><i class="fa fa-comments"></i><a href="{{ site.url }}{{ post.url }}#disqus_thread">comments</a></li>
+      <li><i class="fa fa-comments"></i><a href="{{ site.url }}{{ post.url }}/#disqus_thread">comments</a></li>
     </ul>
   </header>
   <div class="content">
