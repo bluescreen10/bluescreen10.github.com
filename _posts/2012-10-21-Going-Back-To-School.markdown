@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Going Back To School
+categories:
+  - management
 ---
 
 ![UTA][i1]

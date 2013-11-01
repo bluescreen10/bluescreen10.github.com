@@ -1,48 +1,77 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-
+<!DOCTYPE html>
 <html>
-
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="author" content="{{ site.authour }}">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ site.url }}/feed" rel="alternate" title="fprintf.org RSS">
-    <link href="http://fprintf.org/" rel="home">
-    <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Yanone+Kaffeesatz|Neucha|Inconsolata" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/css/master.css">
-    <link rel="stylesheet" href="/css/emacs.css">
+    <meta charset="utf-8">
     <title>{{ site.title }} | {{ page.title }}</title>
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/default.css" rel="stylesheet" type="text/css">
   </head>
-  
   <body>
+
+    <!-- header -->
+    {% include header.html %}
+    <!-- /hedaer -->
+
+    <!-- content -->
     <div class="container">
-      {% include header.html %}
+      <div class="row">
 
-      <div class="content">
-        <div class="article">
-          <h3>
-            <a href="{{ page.url }}" rel="bookmark permalink" title="Permanent link to this post">{{ page.title }}</a>
-            <span class="st_facebook"></span>
-            <span class="st_twitter"></span>
-            <span class="st_googleplus"></span>
-            <span class="st_email"></span>
-          </h3>
-  
-          {{ content }}
-
-          <div class="meta">
-            <div class="published">
-              Published: {{ page.date | date: "%Y-%m-%d" }}
+        <!-- main -->
+        <div class="col-lg-9 col-md-9 col-sm-8 col-xs-12">
+          <article>
+            <header class="post-meta">
+              <h3>{{ page.title }}</h3>
+              <ul>
+                <li><i class="fa fa-clock-o"></i>{{ page.date | date: "%B %d, %Y" }}</li>
+                <li><i class="fa fa-tags"></i>
+                  {% for category in page.categories %}
+                  <a href="/tags/{{ category }}.html">{{ category | capitalize }}</a>
+                  {% if forloop.last == false %},{% endif %}
+                  {% endfor %}</li>
+                <li><i class="fa fa-comments"></i><a href="{{ page.url }}#disqus_thread">comments</a></li>
+              </ul>
+            </header>
+            <div class="content">
+              {{ content }}
             </div>
-            <div id="disqus_thread"></div>
-          </div>
+            <footer>
+              <div id="disqus_thread"></div>
+            </footer>
+          </article>
         </div>
+        <!-- /main -->
 
+        <!-- side bar -->
+        <div class="col-lg-3 col-md-3 col-sm-4 col-xs-0 side-bar">
+          
+          <!-- search box -->
+          {% include search.html %}
+          <!-- searchbox -->
+          
+          <!-- categories -->
+          {% include categories.html %}
+          <!-- categories -->
+          
+        </div>
+        <!-- /side bar -->      
+        
       </div>
     </div>
-   
+
+    <!-- footer -->
+    {% include footer.html %}
+    <!-- /footer -->
+
+    <script src="/js/jquery-2.0.3.min.js" type="text/javascript"></script>
+    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- disqus -->
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'fprintforg'; // required: replace example with your forum shortname
@@ -56,13 +85,9 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    <!-- disqus -->
 
+    {% include disqus.html %}
     {% include google_analytics.html %}
-
-    <!-- ShareThis -->
-    <script type="text/javascript">var switchTo5x=true;</script>
-    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-    <script type="text/javascript">stLight.options({publisher: "91fc9246-1f09-4fb0-9cca-bd69a2ce87dd"});</script>
-    <!-- /ShareThis -->
   </body>
 </html>

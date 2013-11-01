@@ -1,6 +1,9 @@
 ---
 layout: post
-title: New language for Parrot VM"
+title: New language for Parrot VM
+categories:
+  - programming
+  - parrot
 ---
 
 During last year I've discovered the [Parrot VM][1] project, if you haven't heard about it, Parrot it's a register based VM targeted for dynamic languages.

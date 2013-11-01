@@ -1,6 +1,9 @@
 ---
 layout: post
 title: DBD::Mock 1.43 released!
+categories:
+  - perl
+  - cpan
 ---
 
 I've just finished uploading version 1.43 of [DBD::Mock][1]. Couple months ago I've spoken with the author and asked to be the maintainer of that module since they were not releasing new versions.

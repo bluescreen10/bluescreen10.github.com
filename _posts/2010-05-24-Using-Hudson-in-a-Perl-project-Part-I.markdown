@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Using Hudson in a Perl project - Part I
+categories:
+  - perl
+  - continuous_integration 
 ---
 
 For those who doesn't know squat about [Hudson][1] it's a continuous integration server, maybe that doesn't tells you much but as you can see in its [page][2] it has two missions, one of them is build/test projects continuously.

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Exposing Web Services in Perl
+cagtegories:
+  - perl
 ---
 
 I've been looking for a good framework in [Perl][1] to write [Web Services][2] and it looks like there isn't. I believe the two main reasons for that is because Perl's [Weak Typing][3] nature and lack of out of the box subroutine signature, this means that the compiler doesn't know at compile time what parameters and which type does a subroutine needs. While in one hand this give you a flexible language in the other hand it makes almost impossible any attempt of meta-descriptions.

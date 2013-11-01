@@ -1,6 +1,9 @@
 ---
 layout: post
 title: If you don't need to then don't do it
+categories:
+  - perl
+  - programming
 ---
 
 Recently I've submitted a patch for one of the CPAN modules, the module connected to a server to make sure the server its alive before sending any command to it.

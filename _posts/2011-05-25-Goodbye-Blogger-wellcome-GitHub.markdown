@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Goodbye Blogger welcome Github
+categories:
+  - blogging
 ---
 
 I've finished migrating my site to [Github Pages][1] from [Blogger][2], the main reason that put me here is [Jekyll][3]. 

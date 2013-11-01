@@ -1,0 +1,11 @@
+<section class="side-box">
+  <h3>Categories</h3>
+  <ul>
+    {% for category in site.categories %}
+    {% assign tag = category[0] %}
+    <li><a href="/categories/{{ tag }}.html">
+        {{ tag | replace:'_',' ' | capitalize }} ({{ site.categories[tag].size }})
+    </a></li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Using Hudson in a Perl project - Part II
+categories:
+  - perl
+  - continuous_integration
 ---
 
 Let's get serious for a moment, This tutorial covers the basic steps to set up [Hudson continuous integration][1] for a [Perl][2] project but it doesn't cover it's installation, not only because it's a waste of time given the number of tutorials out there but also because it's really simple, in my case I've followed the instructions for Debian right from the link in Hudson's home page.

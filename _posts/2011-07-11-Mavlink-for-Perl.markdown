@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Mavlink for Perl
+categories:
+  - perl
+  - uav
 ---
 
 A couple months ago I've started and implementation of [Mavlink][1] for Perl. Why? Because we're trying to build a [UAV][2] and we're using a [Beagleboard xM][3] as the brain, so given we've the processing power there was no need to suffer writing C. I'm not against it but I rather has the benefits of the rapid prototyping capabilities that scripting languages provide.

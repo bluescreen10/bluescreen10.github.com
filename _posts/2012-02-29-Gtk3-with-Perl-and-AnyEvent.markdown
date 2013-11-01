@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Gtk3 with Perl and AnyEvent
+categories:
+  - perl
+  - gtk
 ---
 
 [Gtk+][1] its an awesome toolkit, cross platform, cross language it is all great but the documentation is terrible specially on scripting language's side. Basically if you want to get anything done you have to browse the official (yet incomplete) documentation, [StackOverflow][2] questions, blogs and even so you may not be able to find the answer for your problem.

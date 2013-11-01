@@ -1,6 +1,9 @@
 ---
 layout: post
 title: No Retry, No More Waiting
+categories:
+  - programming
+  - best_practices
 ---
 
 Usually when dealing with unreliable, slow services or both the most common answer is to either to increase the number of times you retry or increment timeout values. Both solutions would make your application slower and might have the following impact in your business:

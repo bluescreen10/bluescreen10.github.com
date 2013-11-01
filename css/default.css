@@ -1,7 +1,12 @@
+html, body {
+    height: 100%;
+}
+
 body {
     padding-top: 60px;
     color: #727272;
     font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
 }
 
 .post-meta ul {
@@ -45,8 +50,8 @@ hr {
     text-align: center;
 }
 
-.search-box {
-    margin-top: 30px;
+.side-bar {
+    padding-top: 30px;
 }
 
 .side-box h3:after {
@@ -64,18 +69,18 @@ hr {
     overflow: hidden;
 }
 
-.list li {
+.side-box li {
     padding: 3px 0px;
 }
 
-.list li:before {
+.side-box li:before {
     content: "\f105";
     font-family: FontAwesome;
     font-weight: 400;
     margin-right: 10px;
 }
 
-.list {
+.side-box ul {
     list-style: none;
     padding-left: 0px;
 }
@@ -187,4 +192,22 @@ footer section h3 {
   -webkit-box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
   border: 0;
   box-shadow: 0 3px 3px -3px rgba(0,0,0,0.2);
+}
+
+#not-found {
+  margin: 50px 0;
+  text-align: center;
+}
+
+#not-found .title i {
+  color: #F03;
+  position: relative;
+  top: -12px;
+}
+
+#not-found h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 10em;
+  font-weight: 700;
+  letter-spacing: -5px;
 }

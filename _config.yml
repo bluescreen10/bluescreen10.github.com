@@ -11,3 +11,4 @@ paginate_files: index.html
 
 permalink: /:year/:month/:title
 
+category_dir: blog/categories

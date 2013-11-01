@@ -1,6 +1,9 @@
 ---
 layout: post
 title: GNU Emacs your editor
+categories:
+  - editor
+  - emacs
 ---
 
 Here are my 2€ about [GNU Emacs][1]...

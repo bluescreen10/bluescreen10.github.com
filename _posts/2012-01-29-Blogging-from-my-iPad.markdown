@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Blogging from my iPad
+categories:
+  - blogging
+  - editor
 ---
 
 After having an iPad unopened in my drawer for 6 months I've decided to give it a try, it was a gift and I was planning on selling it as it's not a RMS compliant device. I was very disappointed that I was not able to sell it to the price I've set for it - even I lowered it couple times - so I imagined that I could give it a use after all and would mainly use it to read books and browsing Internet.

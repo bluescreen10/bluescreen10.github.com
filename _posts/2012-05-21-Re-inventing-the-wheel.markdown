@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Re-inventing the Wheel 
+categories:
+  - programming
 ---
 
 I'm working in a communication protocol between a custom hardware and an application to configure that device. Unfortunately this device lacks of a TCP/IP stack so I'm basically forced to work through a serial interface.

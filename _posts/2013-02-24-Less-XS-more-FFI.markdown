@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Less XS more FFI
+categories:
+  - perl
+excerpt: Any successful new implementation of Perl5 will need to address the fact that 50% of CPAN modules use or depend on XS. The C-extensions are tied to the guts of current perl interpreter are by no means an small effort that the community will need to invest to port existent distributions over a new interpreter.
 ---
 
 Times they are a-Changing in the Perl 5 community and there have been multiple riots in the past few months. Like [chromatic][1] pointed out it isn't the first time it happens but hopefully the last one. The hot topics are: [Pumpkin Perl][2], [Moe][3] and [Perl 11][4]. Although the three of them are different they all recognize that current state of affairs is not promising for the Perl 5 of the future.

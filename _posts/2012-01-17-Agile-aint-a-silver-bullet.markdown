@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Agile ain't a silver bullet
+categories:
+  - agile
 ---
 
 Through my career I've experienced many software development methodologies such as Waterfall, XP and most recently Kanban, I've even worked with no methodology whatsoever. I don't consider myself a big fan of the methodologies specially when they become the answer to problems like delays, low quality, misunderstandings between the product owner and the development team.

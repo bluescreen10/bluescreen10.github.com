@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Using Hudson in a Perl project - Part III
+categories:
+  - perl
+  - continuous_integration
 ---
 
 In this series of post I'll - this time - explain how to make Hudson create coverage reports for Perl projects, first of all you need to have [Devel::Cover][1] installed and Hudon's [Plot Plugin][2].
