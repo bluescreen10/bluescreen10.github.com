@@ -31,20 +31,26 @@ title: Blog
 
 <div class="pagination-centered">
   <ul class="pagination">
-    <li {% if !paginator.previous_page %}class="disabled"{% endif %}>
-      <a href="{{ paginator.next_previous_path }}">&laquo;</a>
-    </li>
+
+    {% if paginator.page == 1 %}
+    <li class="disabled"><span>&laquo;</span></li>
+    {% else  %}
+    <li><a href="{{ paginator.previous_page_path }}">&laquo;</a></li>
+    {% endif %}
 
     {% for current_page in (1..paginator.total_pages) %}
-      {% if page == current_page %}
+      {% if paginator.page == current_page %}
       <li class="active"><span>{{ current_page }}</span></li>
       {% else %}
       <li><a href="{% if current_page != 1 %}/page{{ current_page }}{% endif %}/">{{ current_page }}</a></li>
       {% endif %}
     {% endfor %}
 
-    <li {% if !paginator.next_page %}class="disabled"{% endif %}>
-      <a href="{{ paginator.next_page_path }}">&raquo;</a>
-    </li>
+    {% if paginator.page == paginator.total_pages %}
+    <li class="disabled"><span>&raquo;</span></li>
+    {% else  %}
+    <li><a href="{{ paginator.next_page_path }}">&raquo;</a></li>
+    {% endif %}
+
   </ul>
 </div>
