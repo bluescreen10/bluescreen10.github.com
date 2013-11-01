@@ -10,6 +10,7 @@
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
     <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/monokai.css" rel="stylesheet" type="text/css">
     <link href="/css/default.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -31,7 +32,7 @@
                 <li><i class="fa fa-clock-o"></i>{{ page.date | date: "%B %d, %Y" }}</li>
                 <li><i class="fa fa-tags"></i>
                   {% for category in page.categories %}
-                  <a href="/tags/{{ category }}.html">{{ category | capitalize }}</a>
+                  <a href="/tags/{{ category }}.html">{{ category | replace:'_', ' ' | capitalize }}</a>
                   {% if forloop.last == false %},{% endif %}
                   {% endfor %}</li>
                 <li><i class="fa fa-comments"></i><a href="{{ site.url }}{{ page.url }}#disqus_thread">comments</a></li>

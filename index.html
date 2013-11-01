@@ -12,7 +12,7 @@ title: Blog
       <li><i class="fa fa-clock-o"></i>{{ post.date | date: "%B %d, %Y" }}</li>
       <li><i class="fa fa-tags"></i>
         {% for category in post.categories %}
-        <a href="/tags/{{ category }}.html">{{ category | capitalize }}</a>
+        <a href="/tags/{{ category }}.html">{{ category | replace:'_',' ' | capitalize }}</a>
         {% if forloop.last == false %},{% endif %}
         {% endfor %}</li>
       <li><i class="fa fa-comments"></i><a href="{{ site.url }}{{ post.url }}/#disqus_thread">comments</a></li>
