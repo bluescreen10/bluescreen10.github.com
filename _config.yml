@@ -1,12 +1,12 @@
 pygments: true
 
-title: "fprintf.org"
-url: "http://www.fprintf.org"
+title: "marianowahlmann.com"
+url: "http://marianowahlmann.com"
 author: "Mariano Wahlmann"
-email: "mariano.wahlmann@gmail.com"
-description: "Programming related topics and thoughts"
+email: "mariano.wahlmann_at_gmail.com"
+twitter: "https://twitter.com/mwahlmann"
+linkedin: "https://www.linkedin.com/pub/mariano-wahlmann/8/379/4a9"
+github: "https://github.com/bluescreen10"
 
-paginate: 5
-paginate_files: index.html
-
+description: "&ldquo;If you don't fail 90% of the time, you're not aiming high enough.&rdquo; -- Alan Kay"
 permalink: /:year/:month/:title

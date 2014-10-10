@@ -1,56 +1,41 @@
 ---
-layout: default
+layout: main
 title: Blog
 ---
 
-{% for post in paginator.posts %}
-<!-- article -->
-<article>
-  <header class="post-meta">
-    <h3>{{ post.title }}</h3>
-    <ul>
-      <li><i class="fa fa-clock-o"></i>{{ post.date | date: "%B %d, %Y" }}</li>
-      <li><i class="fa fa-tags"></i>
-        {% for category in post.categories %}
-        <a href="/tags/{{ category }}.html">{{ category | replace:'_',' ' | capitalize }}</a>
-        {% if forloop.last == false %},{% endif %}
-        {% endfor %}</li>
-      <li><i class="fa fa-comments"></i><a href="{{ site.url }}{{ post.url }}/#disqus_thread">comments</a></li>
-    </ul>
-  </header>
-  <div class="content">
-    {{ post.excerpt | markdownify }}
-  </div>
-  <footer>
-    <a href="{{ post.url }}" class="btn btn-custom">Read more</a>
-  </footer>
-</article>
-<hr>
-<!-- /article -->
-{% endfor %}
-
-<div class="pagination-centered">
-  <ul class="pagination">
-
-    {% if paginator.page == 1 %}
-    <li class="disabled"><span>&laquo;</span></li>
-    {% else  %}
-    <li><a href="{{ paginator.previous_page_path }}">&laquo;</a></li>
-    {% endif %}
-
-    {% for current_page in (1..paginator.total_pages) %}
-      {% if paginator.page == current_page %}
-      <li class="active"><span>{{ current_page }}</span></li>
-      {% else %}
-      <li><a href="{% if current_page != 1 %}/page{{ current_page }}{% endif %}/">{{ current_page }}</a></li>
-      {% endif %}
+<!-- latest posts -->
+<p>
+  <h2>Latest posts</h2>
+  <ul class="post-list">
+    {% for post in site.posts limit: 15 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <time>{{ post.date | date: "%b %d, %Y" }}</time>
+    </li>
     {% endfor %}
-
-    {% if paginator.page == paginator.total_pages %}
-    <li class="disabled"><span>&raquo;</span></li>
-    {% else  %}
-    <li><a href="{{ paginator.next_page_path }}">&raquo;</a></li>
-    {% endif %}
-
   </ul>
-</div>
+  <a href="/archive.html">view all</a>
+</p>
+<!-- /latest posts -->
+
+<!-- categories -->
+<p>
+  <h2>Popular Tags</h2>
+  <ul class="post-list">
+    {% capture tags %}
+    {% for category in site.categories %}
+    {{ category[-1] | size | plus: 1000 }}|{{category[0] }}
+    {% endfor %}
+    {% endcapture %}
+    {% assign sortedtags = tags | split: ' ' | sort | reverse %}
+    {% for tag in sortedtags | limit: 5 %}
+    {% assign contents = tag | split: '|' %}
+    <li>
+      <a href="/categories.html#{{ contents[1] }}">{{ contents[1] | replace:'_', ' ' }}</a>
+      <time>{{ contents[0] | minus: 1000 }}</time>
+    </li>
+    {% endfor %}
+  </ul>
+  <a href="/categories.html">view all</a>
+</p>
+    
