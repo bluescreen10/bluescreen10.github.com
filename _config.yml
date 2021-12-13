@@ -1,11 +1,8 @@
 title: "marianowahlmann.com"
-url: "http://marianowahlmann.com"
+url: "https://marianowahlmann.com"
 author: "Mariano Wahlmann"
 email: "mariano.wahlmann_at_gmail.com"
 twitter: "https://twitter.com/mwahlmann"
-linkedin: "https://www.linkedin.com/pub/mariano-wahlmann/8/379/4a9"
+linkedin: "https://www.linkedin.com/in/mwahlmann/"
 github: "https://github.com/bluescreen10"
-description: "&ldquo;If you don't fail 90% of the time, you're not aiming high enough.&rdquo; -- Alan Kay"
-
-pygments: true
 permalink: /:year/:month/:title
