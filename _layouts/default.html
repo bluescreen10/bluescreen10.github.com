@@ -9,16 +9,16 @@
       title="Feed"
       href="{{site.url}}"
     />
-    <link rel="apple-touch-icon" sizes="300x300" href="{{avatar}}" />
-    <link rel="icon" type="image/jpeg" sizes="300x300" href="{{avatar}}" />
+    <link rel="apple-touch-icon" sizes="300x300" href="{{site.avatar}}" />
+    <link rel="icon" type="image/jpeg" sizes="300x300" href="{{site.avatar}}" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:image" content="{{site.url}}{{avatar}}" />
+    <meta name="twitter:image" content="{{site.url}}{{site.avatar}}" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{site.url}}{{ page.url}}" />
-    <meta property="og:image" content="{{site.url}}{{avatar}}" />
-    <meta property="og:title" content="{{page.title}}" />
+    <meta property="og:url" content="{{site.url}}{{page.url}}" />
+    <meta property="og:image" content="{{site.url}}{{site.avatar}}" />
+    <meta property="og:title" content="{{page.title|default: site.title}}" />
     <meta property="og:description" content="{{page.excerpt}}" />
-    <title>{{ site.title }}</title>
+    <title>{{page.title|default: site.title}}</title>
     <link rel="stylesheet" href="/static/global.css" media="all" />
   </head>
   <body>
