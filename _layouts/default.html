@@ -17,7 +17,7 @@
     <meta property="og:url" content="{{site.url}}{{page.url}}" />
     <meta property="og:image" content="{{site.url}}{{site.avatar}}" />
     <meta property="og:title" content="{{page.title|default: site.title}}" />
-    <meta property="og:description" content="{{page.excerpt}}" />
+    <meta property="og:description" content="{{page.excerpt | strip_html}}" />
     <title>{{page.title|default: site.title}}</title>
     <link rel="stylesheet" href="/static/global.css" media="all" />
   </head>
