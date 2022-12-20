@@ -2,42 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Feed"
+      href="{{site.url}}"
+    />
+    <link rel="apple-touch-icon" sizes="300x300" href="{{avatar}}" />
+    <link rel="icon" type="image/jpeg" sizes="300x300" href="{{avatar}}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="{{site.url}}{{avatar}}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{site.url}}{{ page.url}}" />
+    <meta property="og:image" content="{{site.url}}{{avatar}}" />
+    <meta property="og:title" content="{{page.title}}" />
+    <meta property="og:description" content="{{page.excerpt}}" />
     <title>{{ site.title }}</title>
-    <style>
-      body {
-        font-family: 'Times New Roman', serif;
-        max-width: 40rem;
-        color: #1e293b;
-        font-size: 1.25rem;
-        line-height: 1.5;
-        margin: 0 auto;
-        background-color: #f8fafc;
-      }
-
-      h1 {
-        font-size: 2.5em;
-        line-height: 1em;
-      }
-
-      p {
-        margin-top: 2em;
-      }
-
-      pre {
-        font-size: 0.875rem;
-        overflow: scroll;
-      }
-
-      blockquote {
-        border-left: solid #cf9bb1;
-        margin-left: 0;
-        padding-left: 1.5em;
-        font-style: italic;
-      }
-    </style>
+    <link rel="stylesheet" href="/static/global.css" media="all" />
   </head>
   <body>
-    {{content}}
+    {% include author.html %} {{content}}
     <a rel="me" style="display: none" href="https://techhub.social/@mwahlmann">
       Mastodon
     </a>
