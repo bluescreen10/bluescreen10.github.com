@@ -131,3 +131,39 @@ article {
   margin:0;
   color: #a3a3a3;
 }
+
+.footnote {
+  color: #737373;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.mastfoot { 
+  display:none !important;
+}
+
+.inline-container {
+  font-size: 1rem !important;
+}
+
+.inline-container #field_0 {
+  border-top-left-radius: 1000px !important;
+  border-bottom-left-radius: 1000px !important;
+  margin-right: 0 !important;
+  border-right: 0 !important;
+}
+
+.inline-container .btn {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  border: 1px solid #a3a3a3;
+  border-top-right-radius: 1000px !important;
+  border-bottom-right-radius: 1000px !important;
+}
+
+.main-form .emailoctopus-form-row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
