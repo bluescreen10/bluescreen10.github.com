@@ -11,12 +11,10 @@ Fortunately, with the arrival of generics to the language, implementing a ternar
 package ternary
 
 func T[T any](cond bool, ifTrue, ifFalse T) T {
-    switch cond {
-    case true:
+    if cond {
         return ifTrue
-    default:
-        return ifFalse
     }
+    return ifFalse
 }
 ```
 
