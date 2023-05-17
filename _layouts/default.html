@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="alternate"
-      type="application/atom+xml"
-      title="Feed"
-      href="{{site.url}}/rss.xml"
-    />
-    <link rel="apple-touch-icon" sizes="300x300" href="{{site.avatar}}" />
-    <link rel="icon" type="image/jpeg" sizes="300x300" href="{{site.avatar}}" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:image" content="{{site.url}}{{site.avatar}}" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="{{site.url}}{{page.url}}" />
-    <meta property="og:image" content="{{site.url}}{{site.avatar}}" />
-    <meta property="og:title" content="{{page.title|default: site.title}}" />
-    <meta property="og:description" content="{{page.excerpt | strip_html}}" />
-    <title>{{page.title|default: site.title}}</title>
-    <link rel="stylesheet" href="/static/global.css" media="all" />
-  </head>
-  <body>
-    {% include author.html %} {{content}}
-    <a rel="me" style="display: none" href="https://techhub.social/@mwahlmann">
-      Mastodon
-    </a>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="alternate" type="application/atom+xml" title="Feed" href="{{site.url}}/rss.xml" />
+  <link rel="apple-touch-icon" sizes="300x300" href="{{site.avatar}}" />
+  <link rel="icon" type="image/jpeg" sizes="300x300" href="{{site.avatar}}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:image" content="{{site.url}}{{site.avatar}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{site.url}}{{page.url}}" />
+  <meta property="og:image" content="{{site.url}}{{site.avatar}}" />
+  <meta property="og:title" content="{{page.title|default: site.title}}" />
+  <meta property="og:description" content="{{page.excerpt | strip_html}}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Roboto+Mono&family=Source+Serif+Pro:ital,wght@00,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <title>{{page.title|default: site.title}}</title>
+  <link rel="stylesheet" href="/static/global.css" media="all" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="/">Home</a>
+    <!--<a href="/bio">Bio</a>-->
+    <a href="/rss.xml">RSS</a>
+  </nav>
+  {{content}}
+  <a rel="me" style="display: none" href="https://techhub.social/@mwahlmann">
+    Mastodon
+  </a>
+</body>
+
 </html>

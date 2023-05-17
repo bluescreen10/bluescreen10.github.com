@@ -10,9 +10,12 @@ https://go-proverbs.github.io/) are *"Errors are values"* and *"Don't panic"*.
 
 I'm not here to argue the merits of using panics vs. errors from a syntactic
 point of view. I actually believe that if you decided to use panics instead of
-returning errors, your code aesthetics wouldn't change much. That's because most
-of the standard and third-party libraries are built using multiple returns,
-which forces the consumer to check the error and only then panic. Leaving that 
+returning errors, your code aesthetics wouldn't change much.
+
+That's because most of the standard and third-party libraries are built using multiple returns,
+which forces the consumer to check the error and only then panic.
+
+Leaving that 
 aside, the point of this article is to verify the bold claim that using panics
 would give you a 40% performance improvement.
 
@@ -132,6 +135,5 @@ If we are to believe the results of the original article, I am more inclined to
 think that they are because of other compiler optimizations, rather than the
 removal of if-statements.
 
-_Notes:_
-
 [^1]: [Benchmark code](https://gist.github.com/bluescreen10/6776ac37657c3a9be15423fcfa638e35)
+
