@@ -10,7 +10,7 @@ layout: default
       <h3>{{ post.date | date_to_string: "ordinal", "US" }}</h3>
       <p>{{post.excerpt}}</p>
       <div class="read-more">
-        <a href="{{ post.url }}">Read More</a>
+        <a href="{{ post.url }}">read more</a>
       </div>
     </article>
     {% endfor %}
@@ -29,11 +29,11 @@ layout: default
 <div class="pagination">
   {% if paginator.previous_page %}
   <a href="{{ paginator.previous_page_path }}">
-    Newer Entries
+    previous
   </a>
   {% endif %}
 
   {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="next">Older Entries</a>
+  <a href="{{ paginator.next_page_path }}" class="next">next</a>
   {% endif %}
 </div>
