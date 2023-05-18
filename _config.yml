@@ -12,4 +12,5 @@ plugins: [jekyll-paginate]
 paginate: 5
 collections:
   links:
+    sort_by: date
     output: true

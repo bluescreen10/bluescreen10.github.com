@@ -2,7 +2,6 @@
 layout: post
 title: DeepFloyd IF
 tags: ["ai"]
-category: external
 ---
 
 I had the chance to play with [DeepFloyd IF](https://github.com/deep-floyd/IF), a new text2img model that's designed to create more realistic images and, above all, deal better with text.

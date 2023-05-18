@@ -16,7 +16,7 @@ layout: default
     {% endfor %}
   </div>
   <div class="frontpage-links">
-    {% assign links = site.links | limit:10 %}
+    {% assign links = site.links | reverse | limit:10 %}
     {% for post in links %}
     <article>
       {{post.excerpt}}
