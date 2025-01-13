@@ -2,12 +2,22 @@
 layout: default
 ---
 
-<main class="post">
-    <div class="post-title">
+<main>
+    <section>
         <h1>{{ page.title }}</h1>
-        <h2>{{ page.date | date_to_string: "ordinal", "US" }}</h2>
-    </div>
-    <div class="post-content">
+        {% if page.subtitle %}
+        <h2>{{ page.subtitle}}</h2>
+        {% endif %}
+
+        <div class="metadata">
+            <span>
+                {{ page.date | date_to_string: "ordinal", "US" }}
+            </span>
+            <span>&#x2022;</span>
+            <span>
+                {% assign words = content | strip_html | number_of_words %}
+                {% if words < 360 %} 1 min {% else %} {{ words | divided_by:180 }} mins {% endif %} </span>
+        </div>
         {{ content }}
-    </div>
+    </section>
 </main>

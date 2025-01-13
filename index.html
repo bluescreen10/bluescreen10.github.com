@@ -2,38 +2,28 @@
 layout: default
 ---
 
-<main class="frontpage">
-  <div class="frontpage-featured">
+<main>
+  <div>
     {% for post in paginator.posts %}
-    <article class="frontpage-article">
-      <h2>{{ post.title }}</h2>
-      <h3>{{ post.date | date_to_string: "ordinal", "US" }}</h3>
-      <p>{{post.excerpt}}</p>
-      <div class="read-more">
-        <a href="{{ post.url }}">read more</a>
-      </div>
-    </article>
-    {% endfor %}
-  </div>
-  <div class="frontpage-links">
-    {% assign links = site.links | reverse | limit:10 %}
-    {% for post in links %}
-    <article>
-      {{post.excerpt}}
-      <a style="display:inline" href="{{ post.url }}">#</a>
-    </article>
+    <section>
+      <article>
+        <h2><a href="{{post.url}}">{{ post.title }}</a></h2>
+        <p>{{post.excerpt}}</p>
+      </article>
+    </section>
+    <hr>
     {% endfor %}
   </div>
 </main>
 <!-- Pagination links -->
 <div class="pagination">
   {% if paginator.previous_page %}
-  <a href="{{ paginator.previous_page_path }}">
+  <a class="button" href="{{ paginator.previous_page_path }}">
     previous
   </a>
   {% endif %}
 
   {% if paginator.next_page %}
-  <a href="{{ paginator.next_page_path }}" class="next">next</a>
+  <a class="button" href="{{ paginator.next_page_path }}" class="next">next</a>
   {% endif %}
 </div>

@@ -3,8 +3,6 @@ layout: post
 title: Will AI take my job?
 ---
 
-![Lexica Art - Robot working with a computer](/static/robot-working.png)
-
 > “AI will take your job, it's just a matter of time”
 > 
 > --- Random doomsayer

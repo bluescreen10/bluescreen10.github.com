@@ -14,21 +14,24 @@
   <meta property="og:image" content="{{site.url}}{{site.avatar}}" />
   <meta property="og:title" content="{{page.title|default: site.title}}" />
   <meta property="og:description" content="{{page.excerpt | strip_html}}" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Source+Sans+3&family=Roboto+Mono&family=Source+Serif+4:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-    rel="stylesheet">
   <title>{{page.title|default: site.title}}</title>
   <link rel="stylesheet" href="/static/global.css" media="all" />
 </head>
 
 <body>
-  <nav class="navbar">
+  <div class="brand">
+    <img src="{{site.avatar}}" alt="{{site.title}}" />
+    <div class="site-info">
+      <div class="site-title">{{site.title}}</div>
+      <div class="site-description">{{site.description}}</div>
+    </div>
+  </div>
+  <nav>
     <a href="/">Home</a>
     <!--<a href="/bio">Bio</a>-->
     <a href="/rss.xml">RSS</a>
   </nav>
+  <hr>
   {{content}}
   <a rel="me" style="display: none" href="https://techhub.social/@mwahlmann">
     Mastodon
