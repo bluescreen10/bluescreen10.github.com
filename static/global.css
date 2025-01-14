@@ -165,3 +165,8 @@ blockquote {
   font-size: var(--small-font-size);
   color: var(--secondary-text-color);
 }
+
+p a {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
